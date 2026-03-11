@@ -1,0 +1,26 @@
+{
+  "name": "@hasna/agent-utils",
+  "version": "0.1.0",
+  "description": "Shared utilities for token-efficient AI agent MCP servers and CLIs",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "bun build src/index.ts --outdir dist --target bun && tsc --emitDeclarationOnly --outDir dist",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": ["mcp", "agent", "utils", "token-optimization", "compact"],
+  "author": "hasna",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/bun": "^1.2.4",
+    "typescript": "^5.7.3"
+  }
+}
