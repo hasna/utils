@@ -1,6 +1,6 @@
 {
   "name": "@hasna/agent-utils",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Shared utilities for token-efficient AI agent MCP servers and CLIs",
   "type": "module",
   "main": "dist/index.js",
